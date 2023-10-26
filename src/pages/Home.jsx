@@ -19,16 +19,16 @@ function Home() {
   }
 
   return (
-    <div className="w-full relative h-full">
+    <div className="w-full max-sm:px-4 relative h-full">
       <div className="w-full -z-10 justify-end flex absolute">
-        <div className="w-2/4 ">
+        <div className="w-2/4 max-sm:w-full">
           <img className="object-cover" src={bg} alt="" />
         </div>
       </div>
 
-      <div className="w-full gap-8  h-full flex flex-col justify-center px-[112px]">
-        <div className="w-[482px] flex flex-col gap-8">
-          <div>
+      <div className="w-full gap-8 h-full flex flex-col max-sm:justify-start justify-center px-[112px] max-sm:p-0">
+        <div className="w-[482px] max-sm:text-center max-sm:w-full flex flex-col gap-8">
+          <div className="mt-10">
             <span className="text-base text-gradient">
               NEWSLETTER EXCLUSIVA
             </span>
@@ -56,7 +56,7 @@ function Home() {
           </form>
         </div>
 
-        <div className="flex mt-40 gap-10">
+        <div className="mt-40 max-sm:mt-10 max-sm:grid flex gap-10 max-sm:gap-0 max-sm:grid-cols-2 max-sm:gap-2.4rem w-full rounded-lg sm:grid-cols-1">
           <div className="flex flex-col gap-4 max-w-[274px]">
             <div className="w-12 h-12 bg-[#323238] flex items-center justify-center">
               <Gift size={36} weight="fill" color="#FDD888" />
@@ -69,6 +69,7 @@ function Home() {
               </span>
             </div>
           </div>
+
           <div className="flex flex-col gap-4 max-w-[274px]">
             <div className="w-12 h-12 bg-[#323238] flex items-center justify-center">
               <RocketLaunch size={36} weight="fill" color="#55ACEE" />
@@ -81,6 +82,7 @@ function Home() {
               </span>
             </div>
           </div>
+
           <div className="flex flex-col gap-4 max-w-[274px]">
             <div className="w-12 h-12 bg-[#323238] flex items-center justify-center">
               <Lightning size={36} weight="fill" color="#FFAC33" />
@@ -93,6 +95,7 @@ function Home() {
               </span>
             </div>
           </div>
+
           <div className="flex flex-col gap-4 max-w-[274px]">
             <div className="w-12 h-12 bg-[#323238] flex items-center justify-center">
               <Hammer size={36} weight="fill" color="#8899A6" />
@@ -109,9 +112,9 @@ function Home() {
       </div>
       {showModal && (
         <div className="fixed inset-0 flex transition-transform duration-200 items-center justify-center z-50 bg-black bg-opacity-50">
-          <div className="w-screen h-screen  flex items-center justify-center">
+          <div className="w-screen h-screen flex items-center justify-center">
             <div className="text-white w-[600px] rounded gap-4 flex flex-col items-center justify-center bg-[#323238] p-8">
-              <div className="w-[400px] flex  gap-4  flex-col">
+              <div className="w-[400px] flex gap-4 flex-col">
                 <h2>Olá usuário!</h2>
                 <span>
                   Obrigado por confiar em nosso Workspace; estamos determinados
@@ -124,7 +127,7 @@ function Home() {
                 <span>Acesse seu email e confirme.</span>
               </div>
               <button
-                className="text-black px-4 py-3 bg-gradient-to-r from-[#996dff] to-[#c7afff]"
+                className="rounded px-4 py-3 bg-gradient-to-r from-[#996dff] to-[#c7afff]"
                 onClick={() => setShowModal(false)}
               >
                 Fechar
@@ -136,11 +139,11 @@ function Home() {
 
       {showAlert && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-          <div className="w-screen h-screen  flex items-center justify-center">
+          <div className="w-screen h-screen flex items-center justify-center">
             <div className="text-white bg-[#323238] rounded p-8 flex flex-col items-center justify-center gap-4">
               <p>E-mail inválido. Por favor, insira um e-mail válido.</p>
               <button
-                className="text-black px-4 py-3 bg-gradient-to-r from-[#996dff] to-[#c7afff]"
+                className="rounded px-4 py-3 bg-gradient-to-r from-[#996dff] to-[#c7afff]"
                 onClick={() => setShowAlert(false)}
               >
                 Fechar
