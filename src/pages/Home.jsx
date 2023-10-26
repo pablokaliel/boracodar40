@@ -9,12 +9,19 @@ function Home() {
 
   function handleValueInput(e) {
     e.preventDefault();
+    if (email.trim() === "") {
+      return;
+    }
+    try{
 
-    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-    if (emailRegex.test(email)) {
-      setShowModal(true);
-    } else {
-      setShowAlert(true);
+      const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+      if (emailRegex.test(email)) {
+        setShowModal(true);
+      } else {
+        setShowAlert(true);
+      }
+    }catch{
+      console.log("error")
     }
   }
 
@@ -49,7 +56,11 @@ function Home() {
             />
             <button
               onClick={handleValueInput}
-              className="p-4 rounded flex items-center justify-center gap-2 bg-gradient-to-r from-[#996dff] to-[#c7afff]"
+              disabled={email.trim() === ""}
+              type="submit"
+              className={`p-4 rounded flex items-center justify-center gap-2 ${
+                email.trim() === "" ? "opacity-40 bg-[#996dff]" : " bg-gradient-to-r from-[#996dff] to-[#c7afff]"
+              }`}
             >
               QUERO RECEBER
             </button>
