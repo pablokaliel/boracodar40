@@ -1,4 +1,4 @@
-<h1 align="center"> Página de Login </h1>
+<h1 align="center"> Página NewSletter WorkSpace  </h1>
 
 <p align="center">
 #boraCodar são desafios semanais, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
