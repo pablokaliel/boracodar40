@@ -1,5 +1,5 @@
 import { Gift, Hammer, Lightning, RocketLaunch } from "@phosphor-icons/react";
-import bg from "../assets/bg.png";
+import background from "../assets/BG.png";
 import { useState } from "react";
 
 function Home() {
@@ -29,7 +29,7 @@ function Home() {
     <div className="w-full max-sm:px-4 relative h-full">
       <div className="w-full -z-10 justify-end flex absolute">
         <div className="w-2/4 max-sm:w-full">
-          <img className="object-cover" src={bg} alt="" />
+          <img className="object-cover" src={background} alt="" />
         </div>
       </div>
 
