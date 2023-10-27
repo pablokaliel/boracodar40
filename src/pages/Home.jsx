@@ -73,7 +73,7 @@ function Home() {
               <Gift size={36} weight="fill" color="#FDD888" />
             </div>
             <div>
-              <h1 className="text-lg font-bold">As últimas inovações</h1>
+              <h1 className="text-lg font-bold">Ofertas exclusivas</h1>
               <span className="text-[#C4C4CC]">
                 Como membro da nossa comunidade, você terá acesso a descontos e
                 promoções especiais em produtos selecionados.
@@ -99,7 +99,7 @@ function Home() {
               <Lightning size={36} weight="fill" color="#FFAC33" />
             </div>
             <div>
-              <h1 className="text-lg font-bold">As últimas inovações</h1>
+              <h1 className="text-lg font-bold">Reviews detalhadas</h1>
               <span className="text-[#C4C4CC]">
                 Analisamos os produtos mais populares do mercado para que você
                 possa fazer as escolhas certas.
@@ -112,7 +112,7 @@ function Home() {
               <Hammer size={36} weight="fill" color="#8899A6" />
             </div>
             <div>
-              <h1 className="text-lg font-bold">As últimas inovações</h1>
+              <h1 className="text-lg font-bold">Dicas de organização</h1>
               <span className="text-[#C4C4CC]">
                 Aumente sua eficiência e proteja sua saúde com conselhos
                 especializados sobre ergonomia e organização.
